@@ -1,63 +1,15 @@
-  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
-  [1m[35m (0.1ms)[0m  select sqlite_version(*)
-  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
-  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
 
 
-Started GET "/mongorecords" for ::1 at 2015-11-10 11:39:05 +0100
-
-ActionController::RoutingError (No route matches [GET] "/mongorecords"):
-  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
-  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
-  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
-  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
-  railties (4.2.3) lib/rails/engine.rb:518:in `call'
-  railties (4.2.3) lib/rails/application.rb:165:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
-  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (36.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (26.5ms)
-
-
-Started GET "/" for ::1 at 2015-11-10 11:39:06 +0100
+Started GET "/" for ::1 at 2015-11-11 14:23:35 +0100
 Processing by Rails::WelcomeController#index as HTML
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.1ms)
-Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.0ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/railties-4.2.4/lib/rails/templates/rails/welcome/index.html.erb (24.7ms)
+Completed 200 OK in 38ms (Views: 30.9ms)
 
 
-Started GET "/records" for ::1 at 2015-11-10 11:39:07 +0100
+Started GET "/records" for ::1 at 2015-11-11 14:23:39 +0100
 Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (10.2ms)
-Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+  Rendered records/index.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 24ms
 
 ActionView::Template::Error (
 message:
@@ -73,596 +25,162 @@ resolution:
     14:       <tr>
     15:         <td><%= link_to 'Show', record %></td>
     16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___2686106905956270713_70194222138480'
+  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb__2222500812805045698_70347143779260'
 
 
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (19.9ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.5ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/dplo/.rvm/gems/ruby-1.9.3-p550/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (55.9ms)
 
 
-Started GET "/records" for ::1 at 2015-11-10 11:39:09 +0100
+Started GET "/records" for ::1 at 2015-11-11 14:24:36 +0100
 Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (1.2ms)
-Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (
-message:
-  No configuration could be found for a client named 'default'.
-summary:
-  When attempting to create the new client, Mongoid could not find a client configuration for the name: 'default'. This is necessary in order to know the host, port, and options needed to connect.
-resolution:
-  Double check your mongoid.yml to make sure under the clients key that a configuration exists for 'default'. If you have set the configuration programatically, ensure that 'default' exists in the configuration hash.):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___2686106905956270713_70194222138480'
+  Rendered records/index.html.erb within layouts/application (32.3ms)
+Completed 200 OK in 1585ms (Views: 1568.8ms)
 
 
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.3ms)
-
-
-Started GET "/record" for ::1 at 2015-11-10 11:43:31 +0100
-
-ActionController::RoutingError (No route matches [GET] "/record"):
-  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
-  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
-  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
-  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
-  railties (4.2.3) lib/rails/engine.rb:518:in `call'
-  railties (4.2.3) lib/rails/application.rb:165:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
-  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (7.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 11:43:37 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (6.4ms)
-Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (
-message:
-  No configuration could be found for a client named 'default'.
-summary:
-  When attempting to create the new client, Mongoid could not find a client configuration for the name: 'default'. This is necessary in order to know the host, port, and options needed to connect.
-resolution:
-  Double check your mongoid.yml to make sure under the clients key that a configuration exists for 'default'. If you have set the configuration programatically, ensure that 'default' exists in the configuration hash.):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb__2553636090633579620_70248888894940'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (20.6ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 11:46:29 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (4.2ms)
-Completed 200 OK in 1238ms (Views: 1227.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/scaffolds.self-2eb551680b562769c605ad65ce44d75ee92f2c1b7ed8a6f53ae41689809fa506.css?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-10 11:46:31 +0100
-
-
-Started GET "/records/new" for ::1 at 2015-11-10 11:46:35 +0100
-Processing by RecordsController#new as HTML
-  Rendered records/_form.html.erb (10.7ms)
-  Rendered records/new.html.erb within layouts/application (13.3ms)
-Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 11:57:52 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (4.4ms)
-Completed 200 OK in 212ms (Views: 197.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 11:57:52 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (1.0ms)
-Completed 200 OK in 24ms (Views: 23.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/scaffolds.self-2eb551680b562769c605ad65ce44d75ee92f2c1b7ed8a6f53ae41689809fa506.css?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-10 11:57:52 +0100
-
-
-Started GET "/records/new" for ::1 at 2015-11-10 11:57:55 +0100
-Processing by RecordsController#new as HTML
-  Rendered records/_form.html.erb (9.7ms)
-  Rendered records/new.html.erb within layouts/application (13.4ms)
-Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 11:57:57 +0100
+Started GET "/records" for ::1 at 2015-11-11 14:24:39 +0100
 Processing by RecordsController#index as HTML
   Rendered records/index.html.erb within layouts/application (1.6ms)
-Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 24ms (Views: 22.8ms)
 
 
-Started GET "/records" for ::1 at 2015-11-10 12:05:55 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (3.9ms)
-Completed 200 OK in 190ms (Views: 179.0ms | ActiveRecord: 0.0ms)
+Started GET "/assets/scaffolds.self-2915f93d4c662ed69bb32f941528e6fbadd009644e2bc2a731ebc552a332ea62.css?body=1" for ::1 at 2015-11-11 14:24:39 +0100
 
 
-Started GET "/" for ::1 at 2015-11-10 13:46:15 +0100
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.7ms)
-Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for ::1 at 2015-11-10 13:46:20 +0100
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
-Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 13:46:21 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (7.4ms)
-Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___3325191884659174130_70115770061120'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (40.4ms)
-
-
-Started GET "/record" for ::1 at 2015-11-10 13:46:29 +0100
-
-ActionController::RoutingError (No route matches [GET] "/record"):
-  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
-  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
-  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
-  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
-  railties (4.2.3) lib/rails/engine.rb:518:in `call'
-  railties (4.2.3) lib/rails/application.rb:165:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
-  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.1ms)
-
-
-Started GET "/record" for ::1 at 2015-11-10 13:46:30 +0100
-
-ActionController::RoutingError (No route matches [GET] "/record"):
-  actionpack (4.2.3) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
-  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.2.3) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.2.3) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.2.3) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
-  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
-  activesupport (4.2.3) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  actionpack (4.2.3) lib/action_dispatch/middleware/static.rb:116:in `call'
-  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
-  railties (4.2.3) lib/rails/engine.rb:518:in `call'
-  railties (4.2.3) lib/rails/application.rb:165:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
-  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
-  /Users/KARUN/.rvm/rubies/ruby-2.1.4/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (15.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (27.7ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 13:46:35 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (2.3ms)
-Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___3325191884659174130_70115770061120'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (25.1ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 13:46:35 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (2.1ms)
-Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___3325191884659174130_70115770061120'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.4ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 13:52:00 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (6.4ms)
-Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___2900740344666446963_70116572128160'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.5ms)
-
-
-Started GET "/records" for ::1 at 2015-11-10 15:50:01 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (3.4ms)
-Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb___2900740344666446963_70116572128160'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.9ms)
-
-
-Started GET "/records" for ::1 at 2015-11-11 10:57:59 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (8.5ms)
-Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb__3992093327118896449_70259928201680'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (21.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (42.3ms)
-
-
-Started GET "/records" for ::1 at 2015-11-11 10:58:31 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (2.3ms)
-Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
-
-ActionView::Template::Error (Invalid ns [/Users/KARUN/data/db/ds2dashboard_data.records] (16256)):
-    10:   </thead>
-    11: 
-    12:   <tbody>
-    13:     <% @records.each do |record| %>
-    14:       <tr>
-    15:         <td><%= link_to 'Show', record %></td>
-    16:         <td><%= link_to 'Edit', edit_record_path(record) %></td>
-  app/views/records/index.html.erb:13:in `_app_views_records_index_html_erb__3992093327118896449_70259928201680'
-
-
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.8ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (9.4ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.1ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.2ms)
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (19.8ms)
-
-
-Started GET "/records" for ::1 at 2015-11-11 10:58:54 +0100
-Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (4.4ms)
-Completed 200 OK in 287ms (Views: 276.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/mongorecords.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/scaffolds.self-2eb551680b562769c605ad65ce44d75ee92f2c1b7ed8a6f53ae41689809fa506.css?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/mongorecords.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 10:58:55 +0100
-
-
-Started GET "/records" for ::1 at 2015-11-11 10:59:01 +0100
+Started GET "/records" for ::1 at 2015-11-11 14:24:41 +0100
 Processing by RecordsController#index as HTML
   Rendered records/index.html.erb within layouts/application (1.1ms)
-Completed 200 OK in 23ms (Views: 22.2ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 21ms (Views: 20.9ms)
 
 
-Started GET "/records" for ::1 at 2015-11-11 11:35:13 +0100
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/scaffolds.self-2915f93d4c662ed69bb32f941528e6fbadd009644e2bc2a731ebc552a332ea62.css?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 14:24:41 +0100
+
+
+Started GET "/records" for ::1 at 2015-11-11 14:25:19 +0100
 Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (1.1ms)
-Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.0ms)
+  Rendered records/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 23ms (Views: 21.3ms)
 
 
-Started GET "/records" for ::1 at 2015-11-11 13:38:02 +0100
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/scaffolds.self-2915f93d4c662ed69bb32f941528e6fbadd009644e2bc2a731ebc552a332ea62.css?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 14:25:19 +0100
+
+
+Started GET "/records" for ::1 at 2015-11-11 14:26:40 +0100
 Processing by RecordsController#index as HTML
-  Rendered records/index.html.erb within layouts/application (1.3ms)
-Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+  Rendered records/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.7ms)
 
 
-Started GET "/" for ::1 at 2015-11-11 13:40:20 +0100
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /Users/KARUN/.rvm/gems/ruby-2.1.4/gems/railties-4.2.3/lib/rails/templates/rails/welcome/index.html.erb (1.0ms)
-Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/scaffolds.self-2915f93d4c662ed69bb32f941528e6fbadd009644e2bc2a731ebc552a332ea62.css?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-11 14:26:40 +0100
+
+
+Started GET "/records" for ::1 at 2015-11-11 14:28:40 +0100
+Processing by RecordsController#index as HTML
+  Rendered records/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 21ms (Views: 20.5ms)
+
+
+Started GET "/assets/scaffolds.self-2915f93d4c662ed69bb32f941528e6fbadd009644e2bc2a731ebc552a332ea62.css?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/records.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/records.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-11-11 14:28:40 +0100
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-11-11 14:28:40 +0100
