@@ -1,0 +1,17 @@
+<%= form_for(@mongorecord) do |f| %>
+  <% if @mongorecord.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mongorecord.errors.count, "error") %> prohibited this mongorecord from being saved:</h2>
+
+      <ul>
+      <% @mongorecord.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
